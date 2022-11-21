@@ -1,19 +1,35 @@
-# Final Project Repository
-**INFO-201: _Foundational Skills For Data Science_ (Autumn 2022)**
+# Exploratory Analysis
 
-*P01: Project Proposal*: [Project Proposal Title - Edit Me!](./docs/p01-proposal.md) 
+Link to your group's exploratory analysis here: https://info-201a-sp22.github.io/Exploratory-Analysis/index.html   
+(subsitute for your group's GitHub pages site)
 
+The purpose of this assignment is to provide you with the opportunity to explore your final project data and become familiar with collaborative coding techniques. By completing the assignment, you will demonstrate the following skills:
 
-|Project Directories | Brief Description|
-|---------------| -----------------|
-|[`/data`](./data) | All project datasets should be stored and documented here. For example, if you work with Common Separated Value (.cvs) datasets, they would stored here and documented in this directory's README.md file. Similarly, if you get data from web APIs, you would document the APIs in the directory's `README.md`.
-|[`/docs`](./docs) | All project reports and web documents will be published from this directory. This includes Markdown files (.md), R Markdown files (.Rmd),   HTML files (.html), and so on. The `./docs` directory is the root directory of the website for your project. It will also be used to store all of your design work and project documentation.|
-|[`/instructions`](./instructions)| This directory contains the project design brief.  |
-|[`/source`](./source) | All for your R source code will be located in this directory. To organize your code, you might also decide to create sub-directories.
-| .gitignore | This  file is important. It tells git to ignore all files that are listed therein. Ignoring "non-useful" files will make it *much* easier to work togther in your team. See Freeman and Ross (2019, section 3.6) for details.  |
-| LICENSE | This is a straigtforward software license that basically says "You own the copyright of your code.  Others can use your code, so long as they cite that they are doing so." You should put your names into the LICENSE file. If you would like to use a different license, that would be fine! |
+- Performing an exploratory analysis of a dataset
+- Using R Markdown to create a report on the web
+- Code and collaborate with others
 
-### Developer notes: 
-* You will use this repository for developing your Final Project 
-* You will customized and add to this basic directory structure over the course of your project - edit the above table has needed
-* When ready, delete these developer notes
+Make sure you choose one person to accept this assignment and then add your teammates as collaborators. 
+
+## Assignment structure
+
+For this assignment, your team will create an RMarkdown report about the datasets you have selected for your final project.
+
+Your report must include all of the elements from your Final Project Proposal, but the elements should be clarified, improved, and updated from your original submission based on conversations with your group and feedback from the teaching team. 
+
+In addition, your report must include: 
+
+  - A paragraph of summary information, citing at least 5 values calculated from the data  
+  - A table of  aggregated data (e.g., that has been "grouped" by one of your features)  
+  - 3 charts that display information from the data (what you visualize is up to you)  
+
+## File organization
+
+You will keep your code organized in multiple different files. This will help keep your project more modular and clear. You will create six different files for this project:
+
+  - An index.Rmd file that renders your report  
+  - An .R file that calculates summary information to be included in your report  
+  - An .R file that creates a table of summary information to be included in your report  
+  - An .R file that creates your first chart  
+  - An .R file that creates your second chart  
+  - An .R file that creates your third chart  

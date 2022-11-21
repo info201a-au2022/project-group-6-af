@@ -1,0 +1,121 @@
+---
+title: "Exploratory Analysis"
+output: html_document
+---
+
+## Secondary School Students' Alcohol Consumption
+
+### Authors
+
+Cedric Brinkmann (cbrink@uw.edu)
+Nedim Suko (nsuko@uw.edu)
+Exequiel Bustos (ebustos@uw.edu)
+
+### Affiliation
+
+INFO-201: Technical Foundation of Informatics - The Information School - University of Washington
+
+### Date
+
+Fall 2022
+
+### Abstract
+
+Our main question is how alcohol consumption impacts students' grades and performance at school. This question is important because alcohol consumption is rampant on college campuses, yet is is a topic which is not often discussed nor condemned within the student body. To address the question, we will use data derived from studies. We are concerned between the impact of  alcohol consumption on students in university because it is a topic which is not widely covered nor thought about. To address this concern, we plan to visualize data collected by studies.
+
+### Keywords
+
+Keywords: student behavior; school performance; alcohol consumption impact
+
+### Introduction
+
+Our project analyzes the link between student grade performance and student alcohol consumption. We hope to establish a link between the amount of alcohol consumed and negative impact on grade point average. Whilst our first project was based on a different premise entirely, this prompt comes to us more naturally, for being part of the more social areas of UW student live, we often times find ourselves in situation where drinks are being consumed. We wonder how said consumption may impact school performance.  
+
+We want to uncover the popularity behind binge drinking, and we want to learn student’s motivation for binge drinking when it is well established that it is both illegal and detrimental.
+
+### Problem Domain
+
+The goal of this study is to look into the relationship between alcohol consumption and academic achievement among students. Other detrimental effects of alcohol drinking among college students will be investigated. Anne-Marie Makongho discusses the serious issue on alcohol usage among college students in a seminar paper, ["The Effect of Alcohol Use on Academic Performance of College Students"](https://minds.wisconsin.edu/bitstream/handle/1793/78353/MakonghoAnne-Marie.pdf?sequence=3&isAllowed=y#:~:text=The%20study%20showed%20that%20alcohol,and%20negative%20mental%20health%20outcomes.&text=Several%20researchers%20have%20found%20that,academic%20performance%20including%20lowered%20GPA) that she wrote at the University of Wisconsin. She also states in her research that student alcohol consumption has been connected to a number of harmful outcomes (Makongho, 2018). Some studies have indicated that students who drink too much alcohol struggle to combine their academic work and social lives, leading to potential dropouts and failing classes. Analytics Vidhya argues that alcohol intake on weekdays lowers students' final grades, however alcohol consumption on weekends has no significant influence on final grades, according to the article ["Effect of Alcohol Use on Academic Performance of School Students"](https://medium.com/analytics-vidhya/effect-of-alcohol-use-on-academic-performance-of-school-students-c9ed44dafbba) (Vidhya, 2020). We also want to look into how drinking alcohol can impair academic achievement by reducing the amount of time spent studying, completing homework assignments, and attending courses. Other experts have looked into how drinking affects kids' brains as well. Ana I. Balsa believes that underage drinking can directly hinder learning by inducing changes in the structure and function of the growing brain in a new neurological study titled ["The consequences of alcohol use on academic achievement in high school."](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3026599/) Alcohol abuse can have negative consequences in areas such as functioning, memory, interpretation, and attention span (Balsa, 2011). Nonetheless, the aim of our study is to see how alcohol affects students' quality of learning.
+
+### The Dataset
+
+We found this [dataset (click for the link)](https://www.kaggle.com/datasets/uciml/student-alcohol-consumption) on Kaggle, shared by UCI MACHINE LEARNING, and the source of this dataset is the University of Camerino. This dataset is obtained by surveying Gabriel Pereira and Mousinho da Silveira secondary students in order to use data mining to predict secondary school student performance. The dataset contains 33 features and 395 observations (395 students).
+
+The dataset only contains 395 observations and only includes students from two schools in Portugal. Therefore, there is a limitation that we may not be able to apply the results, such as correlation and causation, we found to other places. What is true in Gabriel Pereira and Mousinho da Silveira may not be the same in other schools.
+
+In addition, the data is collected through a survey of students and contains sensitive information like grades. We should doubt the reliability of such self-reported information. What is being reported may not be honest or accurate. In the dataset, features like alcohol consumption are collected using a scale from 1 to 5 (low to high). There is no clear standard, and each student may have a different scale and standard. For example, students who drink one can of alcohol a week may consider their alcohol consumption to be 1, as one can per week is not a lot, and students who do not drink alcohol may also consider their alcohol consumption to be 1. Many features use scale rating so that such inaccuracy could exist in the dataset.
+
+Our goal is to see how activities, such as alcohol consumption, will impact the performance of a student. However, there is no random assignment, so there is no experimental and control group. As a result, it would be hard to discover any casual relationship.
+
+### Findings
+
+The implications can vary based on whether the results of alcohol consumption in our study return positive, neutral, or negative impacts on a student’s performance/grades. If alcohol consumption negatively impacts students’ performance/grades, then policymakers will have to take this into account when creating an age limit on alcohol purchases. Technologists would have to limit alcohol-related ads and influences in order to make an effort to decrease students’ consumption. On the other hand, if there is no negative impact, then designers may target those students more in order to increase sales. Another implication could be resulted by positive impacts on students’ performance/grades. This implication could be policymakers decreasing the age limit on alcohol purchases. It could also be that students become a larger target market in the alcohol industry which would lead to technologists and designers working more with students to better fit their specific needs to generate more sales for companies.
+
+### Discussion
+
+Our main goal is to see the impact of alcohol consumption on a secondary student's performance. However, there are many more factors that contribute to a student's performance, and such factors may be correlated with alcohol consumption. For example, a parent's education might significantly affect student performance, but it might also impact student alcohol consumption. It is reasonable to believe that children whose parents have relatively lower education might consume more alcohol, which means there is at least a correlation between alcohol consumption and parents' education. However, parents' education may also impact student performance. As a result, if we see a statistically significant difference between students who do not drink alcohol and students who regularly drink alcohol, how can we determine if this difference is brought by alcohol consumption or parents' education becomes a challenge. Therefore, the main challenge we need to address is multicollinearity, which means a correlation exists between independent variables in a regression analysis.
+
+### Conclusion
+
+'GP' - Gabriel Pereira School or 'MS' - Mousinho da Silveira School 
+
+Besides alcohol consumption rate, we believe some critical features, such as parent's education level, quality of family relationships, student's health, and weekly study time, might also contribute heavily to a student's grade. Recall the Limitations & Challenges part, one of the most significant issues with this dataset is that there is no randomization performed and no clear standard for the level of alcohol consumption or the final grade. GP school may have a much harder final than MS. Thus, it is nice to check students from two schools have similar backgrounds. Also, we want to check the existence of multicollinearity. Therefore, we want to see if there is a major difference between students who frequently drink and who do not. 
+
+The table below shows the average of features in the dataset. For mat_GP_avg, mat stands for the dataset being used since we have two datasets, GP stands for the school the observation belongs to, and avg or sd stands for average or standard deviation. It is clear that the feature differences between the two schools are minor, within their one standard deviation. The mean final grade for school GP is 10.49, and MS is 9.848. The mean level of alcohol consumption is 2.26 and 2.5, respectively. It is reasonable to be implied that the two schools share similar standards for measuring alcohol consumption and student performance at school. However, it is noticeable that GP has a relatively higher number of school absences, which is 5.96, than MS, which is 3.761. That suggests that MS might be more rigorous than GP.
+
+Interestingly, only 53 percent of students at GP and 34 percent at MS are involved in extracurricular activities. Higher participation in activities is an indicator of better education, but the absences rate of GP is higher. Could GP be a school that focuses more on sports? As it has higher participation in extracurricular but lower participation in school.
+
+The second table shows that students who frequently drink tend to have worse grades (10.6 vs. 10.23), older age (16.4 vs. 16.6), study less (2.2 vs. 1.87), have fewer good family relationships (4.0 vs. 3.8) and have more absences (5.1 vs. 6.9), etc. Those findings are interesting, but it is better to run a regression to see if those differences are statistically significant.
+
+
+```{r, echo = F}
+source('SummaryTable.R')
+mat_table
+```
+### Table
+
+<<<<<<< HEAD
+If a student drinks more or the same as average students, we would want to classify that student as a frequent drinker. The table below shows the average information between frequent and non-frequent drinkers, grouped by two schools. We want to check if the four groups share similar background information. As it would be done in an experiment with randomization: everything holds the same except the level of alcohol consumption.
+
+
+=======
+If a student drinks more or the same as average students drink, we would want to classify that student who drinks frequently. The table below shows the average information between frequent and non-frequent drinkers, grouped by two schools.
+>>>>>>> 95f5283887127a6c98fba52978f0387664045862
+
+```{r, echo = FALSE}
+groupby_mat_table
+```
+
+
+### Chart 1
+
+The purpose of this graph is to demonstrate the difference in the daily alcohol intake of students in two different classes and how it impacts their grades respectively. You can also compare and see if there is a correlation between class type and daily alcohol intake levels.
+
+The column chart reveals that students with low daily alcohol consumption levels tend to have higher final grades in both types of courses. It also portrays that students who drink high amount of alcohol daily tend to receive lower final grades, but it appears that in math the students do a lot worse if they drink more on a daily basis than students in Portuguese.
+
+```{r, echo = FALSE}
+source("chart1.R")
+bar_chart
+```
+
+### Chart 2
+
+```{r, echo = FALSE}
+source("chart2_scatter.R")
+scatter_plot
+```
+
+I chose to use the scatter plot chart because because I wanted to see how class failures compare to alcohol consumption for each age group from 15 to 22 year old students.
+
+The information that is revealed in group 1 shows that there is low alcohol consumption and no class failure. The number of students reduced when students are older. The second group is shows low alcohol consumption and some class failures. The percentage of students are higher when they get are getting older. In group 3, it shows the high alcohol consumption and no class failure. The percentage of students do not change with age. In group 4, it shows the high alcohol consumption and some failure. The percentage in students in this group increases when they get older.
+
+### Chart 3
+
+```{r, echo = FALSE}
+source("chart3_bar.R")
+bar_plot
+```
+
+I chose to use a bar chart to look at the workday alcohol consumption vs health conditions because I want to understand how alcohol consumption is related to student's health conditions.
+
+This chart reveals that when students have very low alcohol consumption, the percentage of students with good health is about the same as the students with medium to very bad health. For the people with low alcohol consumption, there are about 60% of have good health and the other 40% have medium to very bad health. Surprisingly, with very high alcohol consumption, the people with good health are over 75% compared to the rest of people with medium to very good health conditions.
