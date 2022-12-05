@@ -1,0 +1,13 @@
+name: test
+title: test
+username:
+account: cedricbri
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7789174
+bundleId: 6588059
+url: https://cedricbri.shinyapps.io/test/
+when: 1670125024.61071
+lastSyncTime: 1670125024.61073
+asMultiple: FALSE
+asStatic: FALSE
